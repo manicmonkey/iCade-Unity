@@ -3,7 +3,7 @@
 //  Unity-iPhone
 //
 //  Created by Matthew Klundt on 12/11/12.
-//
+//  Updated by James Baxter 09/03/15.
 //
 
 #import "iCadeUnityLink.h"
@@ -14,19 +14,18 @@
 
 enum JoystickButtonNumbers
 {
-	BTN_PAUSE = 0,
-	BTN_DPAD_UP = 4,
-	BTN_DPAD_RIGHT = 5,
-	BTN_DPAD_DOWN = 6,
-	BTN_DPAD_LEFT = 7,
-	BTN_Y = 12,
-	BTN_B = 13,
-	BTN_A = 14,
-	BTN_X = 15,
-	BTN_L1 = 8,
-	BTN_L2 = 10,
-	BTN_R1 = 9,
-	BTN_R2 = 11
+	BTN_1 = 1,
+	BTN_2 = 2,
+	BTN_3 = 3,
+	BTN_4 = 4,
+	BTN_5 = 5,
+	BTN_6 = 6,
+	BTN_7 = 7,
+	BTN_8 = 8,
+	BTN_UP = 9,
+	BTN_RIGHT = 10,
+	BTN_DOWN = 11,
+	BTN_LEFT = 12
 };
 
 - (id) init {
@@ -39,8 +38,7 @@ enum JoystickButtonNumbers
 
 
 - (void) stateChanged:(iCadeState)state {
-	//NSLog(@"State Changed!");
-	
+	//NSLog(@"State Changed!");	
 }
 
 - (void) setJoystickButton:(int)buttonNum state:(bool)state {
@@ -60,41 +58,40 @@ enum JoystickButtonNumbers
 	NSLog(@"Button Press!");
 	switch (button) {
 		case iCadeJoystickDown:
-			[self setJoystickButton:BTN_DPAD_DOWN state:true];
+			[self setJoystickButton:BTN_DOWN state:true];
 			break;
 		case iCadeJoystickUp:
-			[self setJoystickButton:BTN_DPAD_UP state:true];
+			[self setJoystickButton:BTN_UP state:true];
 			break;
 		case iCadeJoystickLeft:
-			[self setJoystickButton:BTN_DPAD_LEFT state:true];
+			[self setJoystickButton:BTN_LEFT state:true];
 			break;
 		case iCadeJoystickRight:
-			[self setJoystickButton:BTN_DPAD_RIGHT state:true];
+			[self setJoystickButton:BTN_RIGHT state:true];
 			break;
 		case iCadeButtonA:
-			// there is no SELECT Button for Unity's Joypad, so it is arbitrarily L2
-			[self setJoystickButton:BTN_L2 state:true];
+			[self setJoystickButton:BTN_1 state:true];
 			break;
 		case iCadeButtonB:
-			[self setJoystickButton:BTN_L1 state:true];
+			[self setJoystickButton:BTN_2 state:true];
 			break;
 		case iCadeButtonC:
-			[self setJoystickButton:BTN_PAUSE state:true];
+			[self setJoystickButton:BTN_3 state:true];
 			break;
 		case iCadeButtonD:
-			[self setJoystickButton:BTN_R1 state:true];
+			[self setJoystickButton:BTN_4 state:true];
 			break;
 		case iCadeButtonE:
-			[self setJoystickButton:BTN_Y state:true];
+			[self setJoystickButton:BTN_5 state:true];
 			break;
 		case iCadeButtonF:
-			[self setJoystickButton:BTN_B state:true];
+			[self setJoystickButton:BTN_6 state:true];
 			break;
 		case iCadeButtonG:
-			[self setJoystickButton:BTN_X state:true];
+			[self setJoystickButton:BTN_7 state:true];
 			break;
 		case iCadeButtonH:
-			[self setJoystickButton:BTN_A state:true];
+			[self setJoystickButton:BTN_8 state:true];
 			break;
 		default:
 			break;
@@ -105,41 +102,40 @@ enum JoystickButtonNumbers
 	NSLog(@"Button Release!");
 	switch (button) {
 		case iCadeJoystickDown:
-			[self setJoystickButton:BTN_DPAD_DOWN state:false];
+			[self setJoystickButton:BTN_DOWN state:false];
 			break;
 		case iCadeJoystickUp:
-			[self setJoystickButton:BTN_DPAD_UP state:false];
+			[self setJoystickButton:BTN_UP state:false];
 			break;
 		case iCadeJoystickLeft:
-			[self setJoystickButton:BTN_DPAD_LEFT state:false];
+			[self setJoystickButton:BTN_LEFT state:false];
 			break;
 		case iCadeJoystickRight:
-			[self setJoystickButton:BTN_DPAD_RIGHT state:false];
+			[self setJoystickButton:BTN_RIGHT state:false];
 			break;
 		case iCadeButtonA:
-			// there is no SELECT Button for Unity's Joypad, so it is arbitrarily L2
-			[self setJoystickButton:BTN_L2 state:false];
+			[self setJoystickButton:BTN_1 state:false];
 			break;
 		case iCadeButtonB:
-			[self setJoystickButton:BTN_L1 state:false];
+			[self setJoystickButton:BTN_2 state:false];
 			break;
 		case iCadeButtonC:
-			[self setJoystickButton:BTN_PAUSE state:false];
+			[self setJoystickButton:BTN_3 state:false];
 			break;
 		case iCadeButtonD:
-			[self setJoystickButton:BTN_R1 state:false];
+			[self setJoystickButton:BTN_4 state:false];
 			break;
 		case iCadeButtonE:
-			[self setJoystickButton:BTN_Y state:false];
+			[self setJoystickButton:BTN_5 state:false];
 			break;
 		case iCadeButtonF:
-			[self setJoystickButton:BTN_B state:false];
+			[self setJoystickButton:BTN_6 state:false];
 			break;
 		case iCadeButtonG:
-			[self setJoystickButton:BTN_X state:false];
+			[self setJoystickButton:BTN_7 state:false];
 			break;
 		case iCadeButtonH:
-			[self setJoystickButton:BTN_A state:false];
+			[self setJoystickButton:BTN_8 state:false];
 			break;
 		default:
 			break;
