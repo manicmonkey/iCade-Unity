@@ -10,7 +10,11 @@ In your Xcode project, add the files that begin with iCade to the Classes folder
 
 In MonoDevelop, simply use Input.GetKeyDown(KeyCode.JoystickButton#)), Input.GetKeyUp(KeyCode.JoystickButton#)) or Input.GetKey(KeyCode.JoystickButton#)). The corresponding button numbers are shown in iCade_keymap.jpg.
 
+Changelog
 ----
 
-iCadeReaderView.h, iCadeReaderView.m and iCadeState.h slightly modified (retains/releases delegate) from https://github.com/scarnie/iCade-iOS
+Forked from https://github.com/scarnie/iCade-iOS
+* iCadeReaderView.h, iCadeReaderView.m and iCadeState.h slightly modified (retains/releases delegate)
 
+Forked from https://github.com/mattfox12/iCade-Unity
+* Changed keymap and updated reference image
