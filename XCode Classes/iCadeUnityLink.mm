@@ -12,8 +12,7 @@
 
 @implementation iCadeUnityLink
 
-enum JoystickButtonNumbers
-{
+enum JoystickButtonNumbers {
     BTN_1 = 1,
     BTN_2 = 2,
     BTN_3 = 3,

@@ -4,8 +4,7 @@
 
 
 // find this function, and just add the iCade code before the end of the function
-- (void) startUnity:(UIApplication*)application
-{
+- (void) startUnity:(UIApplication*)application {
 	/*
 	  Existing code stays here. Do not delete the given code!!!
 	*/
