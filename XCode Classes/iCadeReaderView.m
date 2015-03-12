@@ -43,17 +43,17 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
     
-	NSLog(@"iCadeReaderView: Init");
-	
+    NSLog(@"iCadeReaderView: Init");
+
     return self;
 }
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
-	
-	[_delegate release];
-	
+
+    [_delegate release];
+
     [super dealloc];
 }
 
@@ -65,9 +65,8 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
 - (void)didBecomeActive {
     if (self.active) {
         [self becomeFirstResponder];
-		
-		NSLog(@"iCadeReaderView: becomeFirstResponder");
-	}
+        NSLog(@"iCadeReaderView: becomeFirstResponder");
+    }
 }
 
 - (BOOL)canBecomeFirstResponder { 
@@ -80,7 +79,7 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
     active = value;
     if (active) {
         [self becomeFirstResponder];
-		NSLog(@"iCadeReaderView: becomeFirstResponder");
+        NSLog(@"iCadeReaderView: becomeFirstResponder");
     } else {
         [self resignFirstResponder];
     }

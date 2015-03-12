@@ -10,7 +10,7 @@
 #import "iCadeReaderView.h"
 
 @interface iCadeUnityLink : NSObject <iCadeEventDelegate> {
-	int joystickNum;
+    int joystickNum;
 }
 
 @end
