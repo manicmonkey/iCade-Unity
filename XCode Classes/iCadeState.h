@@ -32,13 +32,13 @@ typedef enum iCadeState {
     iCadeJoystickUpLeft     = iCadeJoystickUp   | iCadeJoystickLeft,
     iCadeJoystickDownLeft   = iCadeJoystickDown | iCadeJoystickLeft,
     
-    iCadeButtonA            = 0x010,
-    iCadeButtonB            = 0x020,
-    iCadeButtonC            = 0x040,
-    iCadeButtonD            = 0x080,
-    iCadeButtonE            = 0x100,
-    iCadeButtonF            = 0x200,
-    iCadeButtonG            = 0x400,
-    iCadeButtonH            = 0x800,
+    iCadeButton1            = 0x010,
+    iCadeButton2            = 0x020,
+    iCadeButton3            = 0x040,
+    iCadeButton4            = 0x080,
+    iCadeButton5            = 0x100,
+    iCadeButton6            = 0x200,
+    iCadeButton7            = 0x400,
+    iCadeButton8            = 0x800,
     
 } iCadeState;

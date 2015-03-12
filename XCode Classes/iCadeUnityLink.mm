@@ -67,28 +67,28 @@ enum JoystickButtonNumbers
         case iCadeJoystickRight:
             [self setJoystickButton:BTN_RIGHT state:true];
             break;
-        case iCadeButtonA:
+        case iCadeButton1:
             [self setJoystickButton:BTN_1 state:true];
             break;
-        case iCadeButtonB:
+        case iCadeButton2:
             [self setJoystickButton:BTN_2 state:true];
             break;
-        case iCadeButtonC:
+        case iCadeButton3:
             [self setJoystickButton:BTN_3 state:true];
             break;
-        case iCadeButtonD:
+        case iCadeButton4:
             [self setJoystickButton:BTN_4 state:true];
             break;
-        case iCadeButtonE:
+        case iCadeButton5:
             [self setJoystickButton:BTN_5 state:true];
             break;
-        case iCadeButtonF:
+        case iCadeButton6:
             [self setJoystickButton:BTN_6 state:true];
             break;
-        case iCadeButtonG:
+        case iCadeButton7:
             [self setJoystickButton:BTN_7 state:true];
             break;
-        case iCadeButtonH:
+        case iCadeButton8:
             [self setJoystickButton:BTN_8 state:true];
             break;
         default:
@@ -111,28 +111,28 @@ enum JoystickButtonNumbers
         case iCadeJoystickRight:
             [self setJoystickButton:BTN_RIGHT state:false];
             break;
-        case iCadeButtonA:
+        case iCadeButton1:
             [self setJoystickButton:BTN_1 state:false];
             break;
-        case iCadeButtonB:
+        case iCadeButton2:
             [self setJoystickButton:BTN_2 state:false];
             break;
-        case iCadeButtonC:
+        case iCadeButton3:
             [self setJoystickButton:BTN_3 state:false];
             break;
-        case iCadeButtonD:
+        case iCadeButton4:
             [self setJoystickButton:BTN_4 state:false];
             break;
-        case iCadeButtonE:
+        case iCadeButton5:
             [self setJoystickButton:BTN_5 state:false];
             break;
-        case iCadeButtonF:
+        case iCadeButton6:
             [self setJoystickButton:BTN_6 state:false];
             break;
-        case iCadeButtonG:
+        case iCadeButton7:
             [self setJoystickButton:BTN_7 state:false];
             break;
-        case iCadeButtonH:
+        case iCadeButton8:
             [self setJoystickButton:BTN_8 state:false];
             break;
         default:

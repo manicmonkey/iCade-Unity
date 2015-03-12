@@ -28,14 +28,14 @@
  RT ON,OFF  = d,c
  DN ON,OFF  = x,z
  LT ON,OFF  = a,q
- A  ON,OFF  = y,t
- B  ON,OFF  = h,r
- C  ON,OFF  = u,f
- D  ON,OFF  = j,n
- E  ON,OFF  = i,m
- F  ON,OFF  = k,p
- G  ON,OFF  = o,g
- H  ON,OFF  = l,v
+ 1  ON,OFF  = y,t
+ 2  ON,OFF  = u,f
+ 3  ON,OFF  = i,m
+ 4  ON,OFF  = o,g
+ 5  ON,OFF  = h,r
+ 6  ON,OFF  = j,n
+ 7  ON,OFF  = k,p
+ 8  ON,OFF  = l,v
 */
 
 @protocol iCadeEventDelegate <NSObject>
